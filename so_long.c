@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arenilla <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccolin <ccolin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:58:07 by arenilla          #+#    #+#             */
-/*   Updated: 2024/07/24 11:58:12 by arenilla         ###   ########.fr       */
+/*   Updated: 2024/10/14 19:19:33 by ccolin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int	main(int argc, char **argv)
 		ft_printf("Memory allocation failed for t_map at the beginning\n");
 	ft_parse_file(argv, &map);
 	ft_init_game(&map);
+	system("leaks so_long");
 	return (0);
 }
